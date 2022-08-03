@@ -116,6 +116,5 @@ body {
                              "lateral"
                              "main";
         grid-template-columns: 100%;
-        min-width: 300px;
     }
 }
