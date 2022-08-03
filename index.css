@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+  
+    margin: 0%;
+    background-color:white;
+    width: 960px;
+    margin: 50px;
+    display: grid;
+    grid-template-areas: 
+    "lateralTop main"
+    "lateral main";
+    grid-template-columns: 360px 1fr;
+    grid-template-rows: 320px 1fr;
+    border: 2px black;
+    box-shadow: 0 0 5px black;
+  
+}
+
+
+#main{
+    grid-area: main;
+    padding:28px;
+    color: #333;
+}
+#main h1 {
+    margin-top: 55px;
+}
+#main h4{
+    margin-top: -18px;
+}
+#main .agoravai{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    position: relative;
+    gap: 10px;
+
+}
+#main .agoravai2{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    gap: 10px;
+}
+
+#teste{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: relative;
+}
+
+    
+#lateralTop{
+    grid-area: lateralTop;
+    background-color: #333;
+    color: white;
+    padding: 28px;
+}
+#lateralTop ul{
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    text-align: start;
+    margin-left: -25px;
+    
+}
+#lateralTop h1{
+    margin: 0;
+    margin-left: 12px;
+}
+#lateralTop h3{
+    margin-top: 0;
+    margin-left: 14px;
+    font-style: italic;
+    font-size: small;
+}
+#lateralTop a{
+    color: white;
+    
+}
+
+#lateral{
+    grid-area: lateral;
+    background-color: #f0f0f0;
+    padding: 28px;
+
+}
+
+#main div{
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    flex-direction: column;
+
+}
+
+@media (max-width: 1030px) {
+    body {
+        margin: 0;
+        width: 100%;
+      
+    }
+}
+
+
+@media (max-width: 670px) {
+    body {
+        grid-template-areas: "lateralTop"
+                             "lateral"
+                             "main";
+        grid-template-columns: 100%;
+        min-width: 300px;
+    }
+}
